@@ -47,7 +47,7 @@ jobs:
 
   check-formatting:
 
-    if: github.repository_owner == 'files-community'
+    if: github.repository_owner == 'kxxoling'
 
     runs-on: ubuntu-latest
     defaults:
@@ -84,7 +84,7 @@ jobs:
 
   build:
 
-    if: github.repository_owner == 'files-community'
+    if: github.repository_owner == 'kxxoling'
 
     runs-on: windows-latest
     strategy:
@@ -185,7 +185,7 @@ jobs:
 
   test:
 
-    if: github.repository_owner == 'files-community' && always()
+    if: github.repository_owner == 'kxxoling' && always()
 
     needs: [build]
     runs-on: windows-latest
